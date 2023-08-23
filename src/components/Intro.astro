@@ -1,22 +1,41 @@
 ---
-import Heading from "./ui/Heading.astro";
 ---
 
 <section class="bg-white">
-  <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center">
-        <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"><span class="javascript">javascript</span><span class="nz">.org.nz</span></h1>
-        </div>
-      </div>
-    </div>
+	<div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+		<div class="max-w-2xl text-center flex flex-col items-center">
+			<img
+				src="/logo.png"
+				alt="JavaScript New Zealand Logo"
+				class="h-[100px]"
+			/>
+
+			<h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+				<span class="javascript">javascript</span><span class="nz">.org.nz</span
+				>
+			</h1>
+		</div>
+		<div
+			class="flex flex-col items-center justify-center py-3 md:py-10 gap-2 md:gap-5"
+		>
+			<p class="text-md text-center sm:text-xl sm:font-semibold">
+				Click the Slack invite link below to join JavaScript New Zealand
+			</p>
+
+			<button class="bg-[#F4E11C] rounded-md text-[##d0d3db] p-2 font-bold">
+				<a
+					href="https://join.slack.com/t/javascriptnewzealand/shared_invite/zt-202lh07r8-zjT6yQBO2qAHnxSnwlxvkQ"
+					target="_blank"
+				>
+					Join JavaScript New Zealand
+				</a>
+			</button>
+		</div>
+	</div>
 </section>
 
 <style>
-h1 .javascript {
-
-}
-
-h1 .javascript + .nz {
-    font-size: 0.5em;
-}
+	h1 .javascript + .nz {
+		font-size: 0.5em;
+	}
 </style>
